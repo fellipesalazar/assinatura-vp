@@ -6,66 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Assinatura de E-mail</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/style.css">
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
-    <script src="html2canvas.min.js"></script>
-    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/html2canvas.min.js"></script>
+    <script defer src="./src/js/script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="dados">
-            <h1>Gerador de Assinatura de E-mail</h1>
-            <h5>Preencha os dados abaixo para gerar sua assinatura da VP</h5>
-            <form action="">
-                <div class="row">
-                    <div class="input">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input">
-                        <label for="cargo">Cargo</label>
-                        <input type="text" id="cargo">
-                    </div>
-                    <div class="input">
-                        <label for="setor">Setor</label>
-                        <input type="text" id="setor">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone">
-                    </div>
-                    <div class="input">
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email">
-                    </div>
-                </div>
-            </form>
-            <button class="baixar">Baixar assinatura</button>
-        </div>
-    </div>
-    <div class="assinatura-gerada">
-        <h2>Assinatura gerada</h2>
-        <div class="assinatura">
-            <div class="left">
-                <img src="icon-vp.png" alt="Logo VP">
-                <div class="dados-funcionario">
-                    <h3 class="nome">Seu nome</h3>
-                    <h4 class="cargo">Seu cargo</h4>
-                    <h4 class="setor">Setor | Vamos Parcelar</h4>
+
+    <main class="main">
+        <div class="inner-container">
+            <div class="title">
+                <span class="material-symbols-rounded icon">mail</span>
+                <div>
+                    <h1>Gerador de Assinatura de E-mail</h1>
+                    <h5>Preencha os dados abaixo para gerar sua assinatura da VP</h5>
                 </div>
             </div>
-            <div class="right">
-                <a href="#" class="telefone">(XX) XXXXX-XXXX</a>
-                <a href="#" class="email">seu.email@vamosparcelar.com.br</a>
-                <a href="#" class="site">vamosparcelar.com.br</a>
+            <section class="content dados">
+                <div class="profile">
+                    <input type="file" id="uploadPhoto" accept="image/*" hidden>
+                    <figure class="foto">
+                        <img class="img-preview" src="./assets/img/profile.png" alt="Perfil">
+                        <div class="delete">
+                            <span class="material-symbols-rounded icon">delete</span> Remover
+                        </div>
+                    </figure>
+                    <label class="btn secondary md add-foto" for="uploadPhoto">
+                        <div class="text">Adicionar foto</div>
+                    </label>
+                </div>
+                <form class="form">
+                    <div class="row">
+                        <div class="input">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="telefone" placeholder="Telefone" required class="mask-phone">
+                            <label for="telefone">Telefone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
+                            <input type="text" id="cargo" placeholder="Cargo" required>
+                            <label for="cargo">Cargo</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" id="setor" placeholder="Setor" required>
+                            <label for="setor">Setor</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
+                            <input type="email" id="email" placeholder="E-mail" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="content preview">
+                <div class="sign-container">
+                    <div class="assinatura">
+                        <div class="left">
+                            <figure>
+                                <img class="img-assinatura" src="./assets/img/icone-vp-assinatura.png" alt="Logo">
+                            </figure>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img/logo.svg" alt="Logo" class="logo">
+                            <div class="top">
+                                <div class="name">
+                                    <img src="./assets/img/arrow.svg" class="arrow" alt="Arrow">
+                                    <h2 class="nome">Seu Nome</h2>
+                                </div>
+                                <div class="cargo-setor">
+                                    <div class="cargo">Seu Cargo</div>
+                                    <div class="divider"></div>
+                                    <div class="setor">Seu Setor</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="mail">
+                                    <span class="material-symbols-rounded icon">mail</span>
+                                    <div class="email">seu.email@vamosparcelar.com.br</div>
+                                </div>
+                                <div class="phone">
+                                    <span class="material-symbols-rounded icon">phone</span>
+                                    <div class="telefone">(XX) XXXXX-XXXX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="baixar btn primary lg">
+                <div class="text">Baixar assinatura</div>
             </div>
         </div>
-    </div>
+
+    </main>
 </body>
 
 </html>
