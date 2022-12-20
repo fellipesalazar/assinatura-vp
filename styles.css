@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.dados {
+    margin-bottom: 40px;
+}
+
+.assinatura {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    gap: 0;
+    background-color: #5619b4;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.assinatura .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 32px;
+    border-right: 2px solid rgba(255,255,255,.24);
+}
+
+.assinatura .left img {
+    width: 130px;
+}
+
+.assinatura .left * {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.assinatura .left h3 {
+    font-size: 22px;
+}
+
+.assinatura .left h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.assinatura .right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 32px;
+}
+
+.assinatura .right * {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.assinatura-gerada {
+    padding: 24px;
+    border: 1px solid gray;
+}
+
+.assinatura-gerada h2 {
+    margin-bottom: 24px;
+}

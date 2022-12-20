@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Assinatura de E-mail</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dados">
+            <h1>Gerador de Assinatura de E-mail</h1>
+            <h5>Preencha os dados abaixo para gerar sua assinatura da VP</h5>
+            <form action="">
+                <div class="row">
+                    <div class="input">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="cargo">Cargo</label>
+                        <input type="text" id="cargo">
+                    </div>
+                    <div class="input">
+                        <label for="setor">Setor</label>
+                        <input type="text" id="setor">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone">
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email">
+                    </div>
+                </div>
+            </form>
+            <button class="baixar">Baixar assinatura</button>
+        </div>
+    </div>
+    <div class="assinatura-gerada">
+        <h2>Assinatura gerada</h2>
+        <div class="assinatura">
+            <div class="left">
+                <img src="icon-vp.png" alt="Logo VP">
+                <div class="dados-funcionario">
+                    <h3 class="nome">Seu nome</h3>
+                    <h4 class="cargo">Seu cargo</h4>
+                    <h4 class="setor">Setor | Vamos Parcelar</h4>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#" class="telefone">(XX) XXXXX-XXXX</a>
+                <a href="#" class="email">seu.email@vamosparcelar.com.br</a>
+                <a href="#" class="site">vamosparcelar.com.br</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
