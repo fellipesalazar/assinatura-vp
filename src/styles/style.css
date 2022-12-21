@@ -39,6 +39,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding: 0 32px;
   }
 }
 
