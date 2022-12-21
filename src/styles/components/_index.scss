@@ -329,6 +329,20 @@
                                 font: $font-brand-16;
                             }
                         }
+
+                        .site-vp {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            .icon {
+                                font-size: 20px;
+                            }
+
+                            .site {
+                                font: $font-brand-16-b;
+                            }
+                        }
                     }
                 }
             }

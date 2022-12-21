@@ -479,6 +479,24 @@
   font: 400 16px/24px "Montserrat", sans-serif;
 }
 
+.main .content .sign-container .assinatura .right .bottom .site-vp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.main .content .sign-container .assinatura .right .bottom .site-vp .icon {
+  font-size: 20px;
+}
+
+.main .content .sign-container .assinatura .right .bottom .site-vp .site {
+  font: 600 16px/24px "Montserrat", sans-serif;
+}
+
 .btn {
   border: none;
   cursor: pointer;
