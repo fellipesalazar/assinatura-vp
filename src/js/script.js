@@ -25,10 +25,12 @@ $(function () {
     });
 
     function gerarImagem(nome) {
+        window.devicePixelRatio = 2;
         html2canvas(document.querySelector('.assinatura'),{
             width: 750,
             height: 240,
-            backgroundColor: null
+            backgroundColor: null,
+            scale: 3
         }).then(function (canvas) {
             var name = 'assinatura-' + nome.toLowerCase().replace(" ", "-");
             let xhr = new XMLHttpRequest();
