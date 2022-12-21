@@ -338,7 +338,7 @@
 }
 
 .main .content .sign-container .assinatura .right {
-  padding: 24px 32px 24px 56px;
+  padding: 24px 56px;
   width: 494px;
   min-width: 494px;
   height: 240px;
@@ -353,14 +353,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 24px;
+  gap: 12px;
   position: relative;
   background-color: #FFFFFF;
 }
 
 .main .content .sign-container .assinatura .right::after {
   content: "";
-  width: 32px;
+  width: 24px;
   height: 100%;
   background-color: #10cfc9;
   position: absolute;
@@ -368,11 +368,14 @@
   right: 0;
 }
 
-.main .content .sign-container .assinatura .right .logo {
-  height: 32px;
-  position: absolute;
-  bottom: 16px;
-  right: 56px;
+.main .content .sign-container .assinatura .right .logos {
+  padding-top: 16px;
+  margin-bottom: -8px;
+  border-top: 1px solid #CDD6E0;
+}
+
+.main .content .sign-container .assinatura .right .logos img {
+  width: 90%;
 }
 
 .main .content .sign-container .assinatura .right .top {
@@ -386,7 +389,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 4px;
+  gap: 0px;
 }
 
 .main .content .sign-container .assinatura .right .top .name {
@@ -440,7 +443,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 4px;
+  gap: 0px;
 }
 
 .main .content .sign-container .assinatura .right .bottom .mail {
@@ -454,11 +457,11 @@
 }
 
 .main .content .sign-container .assinatura .right .bottom .mail .icon {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main .content .sign-container .assinatura .right .bottom .mail .email {
-  font: 400 16px/24px "Montserrat", sans-serif;
+  font: 400 14px/24px "Montserrat", sans-serif;
 }
 
 .main .content .sign-container .assinatura .right .bottom .phone {
@@ -472,11 +475,11 @@
 }
 
 .main .content .sign-container .assinatura .right .bottom .phone .icon {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main .content .sign-container .assinatura .right .bottom .phone .telefone {
-  font: 400 16px/24px "Montserrat", sans-serif;
+  font: 400 14px/24px "Montserrat", sans-serif;
 }
 
 .main .content .sign-container .assinatura .right .bottom .site-vp {
@@ -490,11 +493,11 @@
 }
 
 .main .content .sign-container .assinatura .right .bottom .site-vp .icon {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main .content .sign-container .assinatura .right .bottom .site-vp .site {
-  font: 600 16px/24px "Montserrat", sans-serif;
+  font: 600 14px/24px "Montserrat", sans-serif;
 }
 
 .btn {

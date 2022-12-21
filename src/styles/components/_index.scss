@@ -227,7 +227,7 @@
                 }
 
                 .right {
-                    padding: 24px 32px 24px 56px;
+                    padding: 24px 56px;
                     width: 494px;
                     min-width: 494px;
                     height: 240px;
@@ -235,13 +235,13 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 24px;
+                    gap: 12px;
                     position: relative;
                     background-color: $color-neutral-0;
 
                     &::after {
                         content: "";
-                        width: 32px;
+                        width: 24px;
                         height: 100%;
                         background-color: #10cfc9;
                         position: absolute;
@@ -249,18 +249,28 @@
                         right: 0;
                     }
 
-                    .logo {
-                        height: 32px;
-                        position: absolute;
-                        bottom: 16px;
-                        right: 56px;
+                    // .logo {
+                    //     height: 32px;
+                    //     position: absolute;
+                    //     bottom: 16px;
+                    //     right: 56px;
+                    // }
+
+                    .logos {
+                        padding-top: 16px;
+                        margin-bottom: -8px;
+                        border-top: 1px solid $color-neutral-200;
+
+                        img {
+                            width: 90%;
+                        }
                     }
 
                     .top {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        gap: 4px;
+                        gap: 0px;
 
                         .name {
                             position: relative;
@@ -300,7 +310,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        gap: 4px;
+                        gap: 0px;
 
                         .mail {
                             display: flex;
@@ -308,11 +318,11 @@
                             gap: 8px;
 
                             .icon {
-                                font-size: 20px;
+                                font-size: 18px;
                             }
 
                             .email {
-                                font: $font-brand-16;
+                                font: $font-brand-14;
                             }
                         }
 
@@ -322,11 +332,11 @@
                             gap: 8px;
 
                             .icon {
-                                font-size: 20px;
+                                font-size: 18px;
                             }
 
                             .telefone {
-                                font: $font-brand-16;
+                                font: $font-brand-14;
                             }
                         }
 
@@ -336,11 +346,11 @@
                             gap: 8px;
 
                             .icon {
-                                font-size: 20px;
+                                font-size: 18px;
                             }
 
                             .site {
-                                font: $font-brand-16-b;
+                                font: $font-brand-14-b;
                             }
                         }
                     }
