@@ -173,10 +173,15 @@
             border: 2px solid rgba($color: #000000, $alpha: .08);
             overflow-x: auto;
 
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
             .assinatura {
                 display: flex;
                 align-items: stretch;
-                width: 100%;
+                width: calc(256px + 494px);
+                height: 240px;
 
                 .left {
                     background-color: $color-primary-800;

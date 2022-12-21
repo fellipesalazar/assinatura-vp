@@ -272,6 +272,10 @@
   overflow-x: auto;
 }
 
+.main .content .sign-container::-webkit-scrollbar {
+  display: none;
+}
+
 .main .content .sign-container .assinatura {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,7 +283,8 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 100%;
+  width: calc(256px + 494px);
+  height: 240px;
 }
 
 .main .content .sign-container .assinatura .left {

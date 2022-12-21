@@ -25,7 +25,10 @@ $(function () {
     });
 
     function gerarImagem(nome) {
-        html2canvas(document.querySelector('.assinatura')).then(function (canvas) {
+        html2canvas(document.querySelector('.assinatura'),{
+            width: 750,
+            height: 240
+        }).then(function (canvas) {
             var name = 'assinatura-' + nome.toLowerCase().replace(" ", "-");
             let xhr = new XMLHttpRequest();
             xhr.responseType = 'blob';
@@ -96,7 +99,5 @@ $(function () {
         };
 
     $('.mask-phone').mask(SPMaskBehavior, spOptions);
-
-
 
 });
