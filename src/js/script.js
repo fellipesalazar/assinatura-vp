@@ -27,7 +27,8 @@ $(function () {
     function gerarImagem(nome) {
         html2canvas(document.querySelector('.assinatura'),{
             width: 750,
-            height: 240
+            height: 240,
+            backgroundColor: null
         }).then(function (canvas) {
             var name = 'assinatura-' + nome.toLowerCase().replace(" ", "-");
             let xhr = new XMLHttpRequest();
