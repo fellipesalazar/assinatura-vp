@@ -368,6 +368,13 @@
   right: 0;
 }
 
+.main .content .sign-container .assinatura .right .logo {
+  height: 32px;
+  position: absolute;
+  bottom: 16px;
+  right: 56px;
+}
+
 .main .content .sign-container .assinatura .right .logos {
   padding-top: 16px;
   margin-bottom: -8px;
